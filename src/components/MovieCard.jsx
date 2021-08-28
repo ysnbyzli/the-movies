@@ -6,7 +6,6 @@ import { AiFillStar } from 'react-icons/ai'
 const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, backdrop_path } }) => {
 
     const [detail, setDetails] = useState([]);
-    console.log(detail?.genres)
     useEffect(() => {
         fetchMovieDetail();
     }, [])

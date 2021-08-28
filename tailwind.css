@@ -9,5 +9,10 @@
 @layer base {
     html, body{
         font-family: 'Oswald', sans-serif;
+        overflow-x: hidden;
     }
+}
+
+.category-active{
+    @apply  rounded-2xl bg-red-200 text-red-400
 }
