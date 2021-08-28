@@ -634,13 +634,104 @@ video {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -651,10 +742,43 @@ video {
   justify-content: space-between;
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-x-1 {
+  -webkit-column-gap: 0.25rem;
+          column-gap: 0.25rem;
+}
+
+.gap-x-2 {
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .bg-white {
@@ -662,14 +786,113 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pl-9 {
+  padding-left: 2.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-\[6px\] {
+  padding-top: 6px;
+}
+
+.pt-\[8px\] {
+  padding-top: 8px;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pr-11 {
+  padding-right: 2.75rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {
@@ -684,7 +907,48 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgba(252, 211, 77, var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+@media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
 }

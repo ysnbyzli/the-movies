@@ -11,11 +11,11 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case FETCH_MOVIES_NOW_PLAYING:
-            return [
-                {
-                    test: "succsess"
-                }
-            ]
+            return {
+                nowPlayingMovies: [
+                    action.payload
+                ]
+            }
         default:
             return state;
     }
