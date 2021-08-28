@@ -600,6 +600,10 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
+html, body{
+  font-family: 'Oswald', sans-serif;
+}
+
 .container {
   width: 100%;
 }
@@ -643,16 +647,6 @@ video {
   margin-right: auto;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -662,68 +656,20 @@ video {
   margin-top: 1.75rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-3\/4 {
-  height: 75%;
-}
-
 .h-96 {
   height: 24rem;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-72 {
-  width: 18rem;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[480px\] {
-  width: 480px;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[450px\] {
-  width: 450px;
+.h-3\/4 {
+  height: 75%;
 }
 
 .w-full {
@@ -742,14 +688,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
 .gap-y-1 {
   row-gap: 0.25rem;
 }
@@ -764,6 +702,19 @@ video {
           column-gap: 0.5rem;
 }
 
+.gap-x-3 {
+  -webkit-column-gap: 0.75rem;
+          column-gap: 0.75rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -776,23 +727,9 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
-}
-
-.object-contain {
-  object-fit: contain;
 }
 
 .object-cover {
@@ -804,80 +741,30 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pl-9 {
-  padding-left: 2.25rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-\[6px\] {
-  padding-top: 6px;
-}
-
-.pt-\[8px\] {
-  padding-top: 8px;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pr-6 {
   padding-right: 1.5rem;
 }
 
-.pr-12 {
-  padding-right: 3rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pt-\[6px\] {
+  padding-top: 6px;
 }
 
-.pr-11 {
-  padding-right: 2.75rem;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
+.pl-9 {
+  padding-left: 2.25rem;
 }
 
 .text-lg {
@@ -895,8 +782,21 @@ video {
   line-height: 1rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -907,14 +807,18 @@ video {
   letter-spacing: 0.05em;
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgba(209, 213, 219, var(--tw-text-opacity));
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgba(252, 211, 77, var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -927,9 +831,14 @@ video {
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
-.text-yellow-300 {
+.text-indigo-400 {
   --tw-text-opacity: 1;
-  color: rgba(252, 211, 77, var(--tw-text-opacity));
+  color: rgba(129, 140, 248, var(--tw-text-opacity));
+}
+
+.text-indigo-200 {
+  --tw-text-opacity: 1;
+  color: rgba(199, 210, 254, var(--tw-text-opacity));
 }
 
 .shadow-md {
@@ -941,11 +850,7 @@ video {
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 
-@media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 @media (min-width: 1024px) {
   .lg\:visible {

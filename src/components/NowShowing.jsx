@@ -54,9 +54,9 @@ const NowShowing = () => {
 
     return (
         <div className="container mx-auto mt-7">
-            <div className="mb-8 pl-9">
-                <h3 className="font-semibold text-lg">Now showing</h3>
-                <p className="text-gray-600 text-xs">Retro occupy organic, stumptown shabby chic-pour-over roof part.</p>
+            <div className="mb-8 pl-9 flex flex-col gap-y-3">
+                <h2 className="font-semibold text-2xl">Now showing</h2>
+                <p className="text-gray-600 text-xs font-normal">Retro occupy organic, stumptown shabby chic-pour-over roof part.</p>
             </div>
             <Slider {...settings}>
                 {movies[0]?.map(movie => (<div><MovieCard movie={movie}></MovieCard></div>))}
