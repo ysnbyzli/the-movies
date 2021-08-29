@@ -683,8 +683,20 @@ html, body{
   height: 75%;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .cursor-pointer {
@@ -770,6 +782,11 @@ html, body{
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pl-9 {
@@ -871,6 +888,10 @@ html, body{
   color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
 
+.slick-list{
+  height: 100%;
+}
+
 .hover\:rounded-2xl:hover {
   border-radius: 1rem;
 }
@@ -892,5 +913,9 @@ html, body{
 @media (min-width: 1024px) {
   .lg\:visible {
     visibility: visible;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 }

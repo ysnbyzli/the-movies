@@ -16,3 +16,7 @@
 .category-active{
     @apply  rounded-2xl bg-red-200 text-red-400
 }
+
+.slick-list{
+    height: 100%;
+}
