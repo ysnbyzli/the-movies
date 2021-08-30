@@ -7,13 +7,11 @@ import { Link, useParams } from 'react-router-dom'
 import { GoMute, GoUnmute } from 'react-icons/go'
 import { BsPlayFill } from 'react-icons/bs'
 import { AiOutlineArrowUp, AiOutlineArrowLeft } from 'react-icons/ai'
-import MovieCard from '../components/MovieCard';
 
 const MovieDetail = () => {
 
     const [videos, setVideos] = useState(null);
     const [details, setDetails] = useState([]);
-    const [collections, setCollections] = useState([]);
     const [isMuted, setIsMuted] = useState(true);
     const [isWatching, setIsWatching] = useState(false);
 
