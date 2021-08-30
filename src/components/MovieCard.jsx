@@ -3,7 +3,8 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { AiFillStar } from 'react-icons/ai'
-const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, backdrop_path }, small }) => {
+import { Link } from 'react-router-dom'
+const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, poster_path }, small, collection }) => {
 
     const [detail, setDetails] = useState([]);
 
@@ -18,11 +19,11 @@ const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, back
 
     return (
         <div className="mx-4 h-96 rounded-lg">
-            <a href="#">
+            <Link to={`movie/${id}`}>
                 <picture>
-                    <img src={`https://image.tmdb.org/t/p/original/${backdrop_path}`} alt="movie" className="object-cover w-full h-3/4 rounded-2xl" />
+                    <img src={`https://image.tmdb.org/t/p/original/${poster_path}`} alt="movie" className="object-cover object-center w-full h-3/4 rounded-2xl" />
                 </picture>
-            </a>
+            </Link>
             <div className="flex lg:justify-between pt-5">
                 <div className="flex flex-1 flex-col gap-y-1 px-3">
                     <h3 className="font-semibold text-lg">{original_title}</h3>

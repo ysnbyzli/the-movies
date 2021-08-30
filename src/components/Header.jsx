@@ -1,13 +1,14 @@
 import { BiSearch } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const Header = ({ handleChangeDarkMode }) => {
 
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white shadow-md">
             <div className="container mx-auto py-3 px-8 flex justify-between items-center">
-                <a href="#" className="font-semibold tracking-wider uppercase">
+                <Link to="/" className="font-semibold tracking-wider uppercase">
                     The Movies
-                </a>
+                </Link>
                 <div className="pr-6 flex items-center">
                     <BiSearch size={20} />
                     <div className="relative inline-block w-10 ml-5 align-middle select-none transition duration-200 ease-in">

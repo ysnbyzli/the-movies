@@ -1,6 +1,12 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
 
@@ -19,8 +25,20 @@ function App() {
 
   return (
     <div className="">
-      <Header handleChangeDarkMode={handleChangeDarkMode} />
-      <Home />
+
+      <Router>
+        <Switch>
+          <Route path="/movie/:id">
+            <MovieDetail />
+          </Route>
+          <Route exact path="/">
+            <Header handleChangeDarkMode={handleChangeDarkMode} />
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+
+
     </div>
   );
 }
