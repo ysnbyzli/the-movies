@@ -65,14 +65,14 @@ const MovieDetail = () => {
                 ) : (
                     <div className={videos ? "absolute inset-0 flex items-center justify-center text-white px-48" : "absolute inset-0"}>
                         {
-                            videos ? (<div className="flex-1 flex items-center justify-center">
-                                <img className="w-64 h-96 object-cover rounded-2xl" src={`https://image.tmdb.org/t/p/original//${details.poster_path}`} alt="movie" />
+                            videos ? (<div className="w-1/2 items-center justify-center hidden lg:flex">
+                                <img className="w-64 h-96 object-cover rounded-2xl " src={`https://image.tmdb.org/t/p/original//${details.poster_path}`} alt="movie" />
                             </div>) : (
                                 <img className="w-full h-full object-cover" src={`https://image.tmdb.org/t/p/original//${details.backdrop_path}`} alt="movie" />
                             )
                         }
 
-                        <div className={videos ? "w-1/2  h-1/2" : "absolute top-0 right-0 flex justify-center px-4 text-white w-[700px] flex-col bg-black bg-opacity-70 h-full"}>
+                        <div className={videos ? "w-full min-w-[450px] h-1/2" : "absolute top-0 right-0 flex justify-center px-4 text-white w-[700px] flex-col bg-black bg-opacity-70 h-full"}>
                             <div className="flex items-center justify-between">
                                 <div>
                                     <h2 className="tracking-wider font-bold text-2xl">
