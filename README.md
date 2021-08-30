@@ -5,12 +5,14 @@ Bu projede [themovie.db](https://www.themoviedb.org/?language=tr) api kullanarak
 bilgileri ile bir proje ortaya çıkardım. Proje kapsamında redux kullanımı pekiştirmek için
 bir çok fırsatta kullanmaya çalıştım.
 
+## DEMO
+https://heuristic-sinoussi-e1e26e.netlify.app/
   
 ## Kullanılan Teknolojiler
 [![React Badge](	https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://tr.reactjs.org/) 
-[![Javascript Badge](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://www.javascript.com/)
-[![Typescript Badge](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)](https://www.typescriptlang.org/) 
-[![Nodejs Badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://nodejs.org/en/) 
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)](https://redux.js.org/) 
+[![Tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) 
 
 ## Ekran Görüntüleri
 
