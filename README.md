@@ -5,6 +5,8 @@ Bu projede [themovie.db](https://www.themoviedb.org/?language=tr) api kullanarak
 bilgileri ile bir proje ortaya çıkardım. Proje kapsamında redux kullanımı pekiştirmek için
 bir çok fırsatta kullanmaya çalıştım.
 
+## DEMO
+https://heuristic-sinoussi-e1e26e.netlify.app/
   
 ## Kullanılan Teknolojiler
 [![React Badge](	https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://tr.reactjs.org/) 
