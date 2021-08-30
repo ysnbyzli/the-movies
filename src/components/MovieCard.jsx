@@ -12,7 +12,7 @@ const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, back
     }, [])
 
     const fetchMovieDetail = async () => {
-        await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US
+        await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=tr-TR
         `).then(value => console.log(setDetails(value.data)));
     }
 
@@ -33,7 +33,7 @@ const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, back
                 </div>
                 {
                     !small ? (
-                        <div className="flex gap-x-3 font-light text-xs text-gray-400 pt-[6px] invisible lg:visible">
+                        <div className="flex gap-x-3 font-light text-xs text-gray-400 pt-[6px] invisible xl:visible">
                             <span className="whitespace-nowrap">{detail.runtime} min</span>
                             <span className="whitespace-nowrap">{detail.release_date}</span>
                         </div>

@@ -2,10 +2,10 @@ import React from 'react'
 import CategoryItem from './CategoryItem'
 
 const categories = [
-    { id: 28, name: "Action" },
-    { id: 12, name: "Adventure" },
-    { id: 16, name: "Animation" },
-    { id: 35, name: "Comedy" },
+    { id: 28, name: "Aksiyon" },
+    { id: 12, name: "Macera" },
+    { id: 16, name: "Animasyon" },
+    { id: 35, name: "Komedi" },
     { id: 18, name: "Drama" },
 ]
 
@@ -14,9 +14,9 @@ const Category = () => {
 
 
     return (
-        <div>
-            <div className="container mx-auto mt-5">
-                <h2 className="font-semibold text-2xl pl-9">Categories</h2>
+        <>
+            <div className="container mx-auto mt-6">
+                <h2 className="font-semibold text-2xl pl-9">Kategoriler</h2>
                 <div className="flex items-center font-light gap-x-4 mt-4 pl-3">
                     {
                         categories.map(category => (
@@ -25,7 +25,7 @@ const Category = () => {
                     }
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

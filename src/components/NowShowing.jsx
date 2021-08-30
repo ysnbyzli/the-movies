@@ -53,12 +53,11 @@ const NowShowing = () => {
     }
 
     return (
-        <div className="container mx-auto mt-7">
-            <div className="mb-8 pl-9 flex flex-col gap-y-3">
-                <h2 className="font-semibold text-2xl">Now showing</h2>
-                <p className="text-gray-600 text-xs font-normal">Retro occupy organic, stumptown shabby chic-pour-over roof part.</p>
+        <div className="container mx-auto mt-7 h-[530px]">
+            <div className="mb-8 pl-9 flex">
+                <h2 className="font-semibold text-2xl">Sinemalarda</h2>
             </div>
-            <Slider {...settings}>
+            <Slider {...settings} className="h-full">
                 {movies[0]?.map(movie => (<div><MovieCard movie={movie}></MovieCard></div>))}
             </Slider>
         </div>

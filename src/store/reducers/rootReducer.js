@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 import nowPlaying from './nowPlaying'
-import categoryReducer from "./categoryReducer";
+import movieReducer from "./movieReducer";
 
 
 export default combineReducers({
     nowPlaying,
-    category: categoryReducer
+    movie: movieReducer
 })

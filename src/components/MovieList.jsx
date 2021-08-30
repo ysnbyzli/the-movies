@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Slider from 'react-slick'
-import { changeCurrentCategoryMovies } from '../store/actions/category'
+import { changeCurrentCategoryMovies } from '../store/actions/movie'
 import MovieCard from './MovieCard'
 
 const settings = {
@@ -12,6 +12,14 @@ const settings = {
     slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                infinite: true,
+            }
+        },
         {
             breakpoint: 1024,
             settings: {
@@ -40,8 +48,8 @@ const settings = {
 
 const MovieList = () => {
 
-    const currentCategoryId = useSelector(state => state.category.currentCategory)
-    const currentCategoryMovies = useSelector(state => state.category.currentCategoryMovies)
+    const currentCategoryId = useSelector(state => state.movie.currentCategory)
+    const currentCategoryMovies = useSelector(state => state.movie.currentCategoryMovies)
     console.log(currentCategoryMovies);
     const dispatch = useDispatch();
 
