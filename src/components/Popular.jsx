@@ -7,7 +7,7 @@ import MovieCard from './MovieCard';
 const Popular = () => {
 
     const movies = useSelector(state => state.movie.popularMovies);
-    console.log(movies)
+
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -20,7 +20,7 @@ const Popular = () => {
             <ul className="pt-4 grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-5">
                 {
                     movies && movies.map(movie => (
-                        <MovieCard movie={movie} small />
+                        <MovieCard key={movie.id} movie={movie} small />
                     ))
                 }
             </ul>

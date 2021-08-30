@@ -13,7 +13,7 @@ const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, back
 
     const fetchMovieDetail = async () => {
         await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=tr-TR
-        `).then(value => console.log(setDetails(value.data)));
+        `).then(value => setDetails(value.data));
     }
 
     return (
@@ -26,14 +26,14 @@ const MovieCard = ({ movie: { id, original_title, vote_average, vote_count, back
             <div className="flex lg:justify-between pt-5">
                 <div className="flex flex-1 flex-col gap-y-1 px-3">
                     <h3 className="font-semibold text-lg">{original_title}</h3>
-                    <span className="text-xs font-light tracking-wider text-gray-600 whitespace-nowrap">{
+                    <span className="text-xs font-light tracking-wider text-gray-600 dark:text-gray-300 whitespace-nowrap">{
                         detail?.genres?.map(genre => genre.name + " ")
                     }</span>
-                    <span className="flex items-center font-light gap-x-1 text-sm text-gray-500"> <AiFillStar className="text-yellow-300" /> {vote_average} ({vote_count})</span>
+                    <span className="flex items-center font-light gap-x-1 text-sm text-gray-500 dark:text-gray-300"> <AiFillStar className="text-yellow-300" /> {vote_average} ({vote_count})</span>
                 </div>
                 {
                     !small ? (
-                        <div className="flex gap-x-3 font-light text-xs text-gray-400 pt-[6px] invisible xl:visible">
+                        <div className="flex gap-x-3 font-light text-xs text-gray-400 dark:text-gray-300 pt-[6px] invisible xl:visible">
                             <span className="whitespace-nowrap">{detail.runtime} min</span>
                             <span className="whitespace-nowrap">{detail.release_date}</span>
                         </div>

@@ -11,6 +11,7 @@ const settings = {
     slidesToShow: 6,
     slidesToScroll: 6,
     initialSlide: 0,
+    arrows: false,
     responsive: [
         {
             breakpoint: 1440,
@@ -50,7 +51,7 @@ const MovieList = () => {
 
     const currentCategoryId = useSelector(state => state.movie.currentCategory)
     const currentCategoryMovies = useSelector(state => state.movie.currentCategoryMovies)
-    console.log(currentCategoryMovies);
+
     const dispatch = useDispatch();
 
     useEffect(() => {
