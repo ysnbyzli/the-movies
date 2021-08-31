@@ -6,7 +6,7 @@ import Popular from '../components/Popular'
 
 const Home = () => {
     return (
-        <div className="dark:bg-gray-900 dark:text-gray-200">
+        <div className="dark:bg-gray-900 dark:text-gray-200 transition ease-in-out duration-500">
             <NowShowing />
             <Category />
             <MovieList />

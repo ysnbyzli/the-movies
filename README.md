@@ -31,6 +31,7 @@ https://heuristic-sinoussi-e1e26e.netlify.app/
 - [x]  Kategoriye göre filtreleme
 - [x]  Popüler filmleri listeleme
 - [x]  Filme ait detay sayfası   
+- [x]  Film arama
 
  
   
